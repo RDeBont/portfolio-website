@@ -1,11 +1,12 @@
 <div class="avatar">
     <i class="fa-regular fa-user" style="font-size:32px; "></i>
-     <!-- Jou can add your own img here <img src="jouw-foto.jpg" ...> plaatsen -->
+    <!--  you can add your profile img here under -->
+    <!-- <img src="<?php echo $base_url; ?>/img/profile.jpg" >  -->
 </div>
 <nav class="navbar">
-    <a href="#">About me</a>
+    <a href="<?php echo $base_url; ?>/index.php#aboutMe">About me</a>
     <span>|</span>
     <a href="<?php echo $base_url; ?>/index.php">Home</a>
     <span>|</span>
-    <a href="<?php echo $base_url; ?>/page's/Projects.php">Projects</a>
+    <a href="<?php echo $base_url; ?>/page/Projects.php">Projects</a>
 </nav>

@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    background: #a7a6a6;
+    background: #f5f5f5;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
@@ -27,9 +27,7 @@ body {
     margin: 0 8px;
 }
 
-.navbar span {
-    color: #888;
-}
+
 
 .avatar {
     position: absolute;
@@ -43,13 +41,20 @@ body {
     align-items: center;
     justify-content: center;
 }
+.avatar img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
-.center-content {
+.centerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 81vh;
+    min-height: 100vh;
+
 }
 
 .title {
@@ -70,7 +75,7 @@ body {
     margin-bottom: 0rem;
 }
 
-.btn-group {
+.btnGroup {
     display: flex;
     gap: 1rem;
 }
@@ -80,39 +85,91 @@ body {
     padding: 0.6em 1.5em;
     border-radius: 10px;
     border: 2px solid #222;
-    background: #ede7f6;
+    background: #f5f5f5;
     color: #222;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
 }
-
 .btn:hover {
     background: #222;
     color: #fff;
 }
 
+/* about me */
 
-/* Projecten & talen sectie */
-.lang-bar {
-    width: 100%;
+.aboutMeWrapper {
+    margin: 0 20%;
+    margin-bottom: 10%;
     text-align: center;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    padding: 1.2rem 0 0.7rem 0;
-    margin-bottom: 2rem;
-    background: #a7a6a6;
+    border: 2px solid #111;
+    border-radius: 14px;
+    background: #f5f5f5;
+    padding: 2%;
 }
 
-.lang-bar span {
+.aboutMeTitle {
+    display: inline-block; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #111;
+    margin: 0 0 1.5% 0 ;
+}
+
+
+
+.aboutMeImg {
+    margin: 0 0 1.5% 0 ;
+    width: 120px;           
+    height: 120px;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-bottom: #111 2px solid;
+
+}
+
+.aboutMeImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.aboutMeContent {
+    margin: 1.5% 0 0 0 ;
+
+    margin: 0.7rem 0 0.5rem 0;
+}
+
+
+
+
+/* Projecten & talen sectie */
+.langBar {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    padding: 1.2rem 0 0.7rem 0;
+    margin-bottom: 2rem;
+    background: #f5f5f5;
+}
+
+.langBar span {
     color: #525252;
     font-size: 1rem;
 }
 
-.lang-list {
+.langList {
     margin: 0.7rem 0 0.5rem 0;
 }
 
-.lang-p {
+.langP {
     display: inline-block;
     margin: 0 8px;
     padding: 0.3em 1.1em;
@@ -121,36 +178,35 @@ body {
     background: #f5f5f5;
     color: #222;
     font-size: 1.1rem;
-    transition: background 0.2s, color 0.2s;
 }
 
 
 
-.projects-section {
+.projectsSection {
     max-width: 900px;
     margin: 0 auto 2rem auto;
     padding: 0 1rem;
 }
 
-.projects-title {
+.projectsTitle {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
-.projects-desc {
+.projectsDesc {
     color: #acabab;
     margin-bottom: 1.5rem;
 }
 
-.project-list {
+.projectList {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
 }
 
-.project-card {
+.projectCard {
     display: flex;
     align-items: flex-start;
     background: #fff;
@@ -161,41 +217,30 @@ body {
     gap: 1.2rem;
 }
 
-.project-img {
-    width: 80px;
-    height: 80px;
-    background: #f0f0f0;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #bbb;
-    font-size: 2.5rem;
-}
 
-.project-img img {
+.projectImg img {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.project-info {
+.projectInfo {
     flex: 1;
 }
 
-.project-title {
+.projectTitle {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
 }
 
-.project-body {
+.projectBody {
     color: #666;
     margin-bottom: 0.7rem;
 }
 
-.button-wrapper {
+.buttonWrapper {
   display: flex;
   justify-content: space-between; 
   align-items: center;
@@ -204,7 +249,7 @@ body {
 
 
 
-.see-more-btn {
+.seeMoreBtn {
     padding: 0.4em 1.1em;
     border-radius: 6px;
     border: 1px solid #222;
@@ -215,12 +260,12 @@ body {
     transition: background 0.2s, color 0.2s;
 }
 
-.see-more-btn:hover {
+.seeMoreBtn:hover {
     background: #222;
     color: #fff;
 }
 
-.git-link {
+.gitLink {
     padding: 0.4em 1.1em;
     border-radius: 6px;
     border: 1px solid #222;
@@ -231,12 +276,12 @@ body {
     transition: background 0.2s, color 0.2s;
 
 }
-.git-link:hover {
+.gitLink:hover {
     background: #222;
     color: #fff;
 }
 
-.project-overlay {
+.projectOverlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -249,7 +294,7 @@ body {
     z-index: 9999;
 }
 
-.overlay-content {
+.overlayContent {
     background: #fff;
     padding: 2rem 2.5rem;
     border-radius: 14px;
@@ -260,7 +305,7 @@ body {
     text-align: center;
 }
 
-.close-overlay-btn {
+.closeOverlayBtn {
     margin-top: 1.5rem;
     padding: 0.5em 1.5em;
     border-radius: 8px;
@@ -270,21 +315,147 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.2s,
-        color 0.2s;
+    color 0.2s;
 }
 
-.close-overlay-btn:hover {
+.closeOverlayBtn:hover {
     background: #222;
     color: #fff;
 }
 
+/* footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footerContent a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 @media (max-width: 600px) {
-    .project-card {
+    .avatar{
+        position: static;
+        margin: 3% auto 1% auto;
+    }
+    .centerContent {
+        min-height: 60vh;
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle,
+    .subtitleProjects {
+        font-size: 1.1rem;
+    }
+
+    .btnGroup {
         flex-direction: column;
+        gap: 0.7rem;
+        width: 100%;
         align-items: stretch;
     }
 
-    .project-img {
-        margin-bottom: 0.7rem;
+    .btn {
+        font-size: 1rem;
+        padding: 0.7em 1em;
+        width: 100%;
+    }
+
+    .aboutMeWrapper {
+        margin: 2% 2%;
+        padding: 4% 2%;
+    }
+
+    .aboutMeImg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .aboutMeTitle {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+
+    .langBar {
+        padding: 1rem 0 0.5rem 0;
+        font-size: 0.95rem;
+    }
+
+    .langList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    .langP {
+        font-size: 0.95rem;
+        padding: 0.2em 0.7em;
+        margin: 0 2px;
+    }
+
+    .projectsSection {
+        padding: 0 2%;
+    }
+
+    .projectsTitle {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .projectList {
+        gap: 0.7rem;
+    }
+
+    .projectCard {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.8rem 0.6rem;
+        gap: 0.7rem;
+    }
+
+    .projectImg {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 0 auto 0.5rem auto;
+    }
+    .projectImg img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .projectBody {
+        font-size: 0.95rem;
+    }
+
+    .buttonWrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .seeMoreBtn,
+    .gitLink {
+        font-size: 0.95rem;
+        width: 100%;
+        padding: 0.5em 0.7em;
+    }
+
+    .projectOverlay .overlayContent {
+        padding: 1rem 0.5rem;
+        max-width: 98vw;
+        max-height: 90vh;
     }
 }
